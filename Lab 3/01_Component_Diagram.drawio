@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="Component Diagram - Internal Microservice Catalog &amp; Health Portal">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Internal Microservice Catalog &amp; Health Portal - UML Component Diagram&#10;Microservices Architecture | Problem Statement #42 - Developer Tools &amp; IT Operations | SRN PES2UG24CS046" style="text;html=1;align=center;fontSize=17;fontStyle=1;fontColor=#12355B" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="1340" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="frame0" value="&lt;&lt;subsystem&gt;&gt; Presentation Tier" style="html=1;shape=rect;dashed=1;rounded=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fillColor=#F2F7FC;strokeColor=#8FB4D6;fontColor=#2C5F8E;fontSize=12;fontStyle=1;container=0" vertex="1" parent="1">
+          <mxGeometry x="40" y="55" width="460" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="frame1" value="&lt;&lt;subsystem&gt;&gt; Edge &amp; Security Tier" style="html=1;shape=rect;dashed=1;rounded=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fillColor=#FFF6EC;strokeColor=#E0A96D;fontColor=#A9631B;fontSize=12;fontStyle=1;container=0" vertex="1" parent="1">
+          <mxGeometry x="40" y="175" width="1040" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="frame2" value="&lt;&lt;subsystem&gt;&gt; Service Tier - independently deployable services" style="html=1;shape=rect;dashed=1;rounded=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fillColor=#F1F8F4;strokeColor=#8DBCA1;fontColor=#26684A;fontSize=12;fontStyle=1;container=0" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="1040" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="frame3" value="&lt;&lt;subsystem&gt;&gt; Data Tier" style="html=1;shape=rect;dashed=1;rounded=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fillColor=#F6F3FA;strokeColor=#A99BC4;fontColor=#54417E;fontSize=12;fontStyle=1;container=0" vertex="1" parent="1">
+          <mxGeometry x="40" y="560" width="1040" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="frame4" value="External Systems" style="html=1;shape=rect;dashed=1;rounded=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fillColor=#F5F6F7;strokeColor=#A8B2BC;fontColor=#4A555F;fontSize=12;fontStyle=1;container=0" vertex="1" parent="1">
+          <mxGeometry x="1120" y="320" width="260" height="260" as="geometry"/>
+        </mxCell>
+        <mxCell id="C1" value="&lt;&lt;component&gt;&gt;&#10;Portal Web UI Component" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#DCEAF7;strokeColor=#2C5F8E;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="420" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="E1" value="&lt;&lt;external system&gt;&gt;&#10;Corporate SSO (OIDC) Provider" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#E8EBEE;strokeColor=#4A555F;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="640" y="80" width="260" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="C2" value="&lt;&lt;component&gt;&gt;&#10;API Gateway &amp; Auth Component" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#FBE6CE;strokeColor=#A9631B;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="1000" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="C3" value="&lt;&lt;component&gt;&gt;&#10;Catalog Service" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#DCEFE4;strokeColor=#26684A;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="C4" value="&lt;&lt;component&gt;&gt;&#10;Dependency Graph Service" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#DCEFE4;strokeColor=#26684A;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="265" y="360" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="C5" value="&lt;&lt;component&gt;&gt;&#10;Alerting Service" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#DCEFE4;strokeColor=#26684A;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="470" y="360" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="C6" value="&lt;&lt;component&gt;&gt;&#10;API Doc Aggregator Service" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#DCEFE4;strokeColor=#26684A;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="675" y="360" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="C7" value="&lt;&lt;component&gt;&gt;&#10;Health Probe Service" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#DCEFE4;strokeColor=#26684A;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="880" y="360" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="C8" value="&lt;&lt;component&gt;&gt;&#10;Catalog Store Component" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#E6DFF2;strokeColor=#54417E;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="600" width="340" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="C9" value="&lt;&lt;component&gt;&gt;&#10;Probe Ledger &amp; Audit Store Component" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#E6DFF2;strokeColor=#54417E;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="560" y="600" width="400" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="E2" value="&lt;&lt;external system&gt;&gt;&#10;Registered Microservice Fleet" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#E8EBEE;strokeColor=#4A555F;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1140" y="350" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="E3" value="&lt;&lt;external system&gt;&gt;&#10;Notification Gateway" style="html=1;shape=component;align=left;spacingLeft=38;verticalAlign=top;spacingTop=6;rounded=0;whiteSpace=wrap;fillColor=#E8EBEE;strokeColor=#4A555F;fontColor=#12355B;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1140" y="490" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I1" value="I1  IPortalSession&#10;«HTTPS / REST-JSON, TLS 1.2+»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C2" target="C1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I2" value="I2  IOidcTokenValidation&#10;«OIDC / OAuth 2.0, JWKS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="E1" target="C2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I3" value="I3  ICatalogAdmin&#10;«REST-JSON over mTLS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C3" target="C2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I4" value="I4  IGraphQuery&#10;«REST-JSON over mTLS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C4" target="C2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I5" value="I5  IAlertPolicy&#10;«REST-JSON over mTLS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C5" target="C2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I6" value="I6  IApiDocQuery&#10;«REST-JSON over mTLS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C6" target="C2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I7" value="I7  IHealthMetrics&#10;«REST-JSON over mTLS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C7" target="C2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I8" value="I8  IServiceRegistry&#10;«REST-JSON over mTLS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C3" target="C4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I9" value="I9  IProbeResultEvents&#10;«AMQP 1.0 publish / subscribe topic»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C7" target="C5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I10" value="I10  ICatalogStore&#10;«SQL / JDBC over TLS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C8" target="C3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I10b" value="I10  ICatalogStore&#10;«SQL / JDBC over TLS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C8" target="C4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I11" value="I11  IProbeLedger&#10;«Time-series append &amp; range query, HTTPS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C9" target="C7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I11b" value="I11  IProbeLedger&#10;«Time-series append &amp; range query, HTTPS»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C9" target="C5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I12" value="I12  IAuditLog&#10;«Append-only (WORM) write API»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="C9" target="C2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I13" value="I13  IHealthEndpoint&#10;«HTTPS GET /health, 5 s timeout»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="E2" target="C7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I14" value="I14  IOpenApiSpec&#10;«HTTPS GET /openapi.json, daily»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="E2" target="C6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_I15" value="I15  INotificationDispatch&#10;«SMTP / Slack &amp; PagerDuty webhook»" style="html=1;endArrow=none;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#1A6FB5;strokeWidth=1.4;fontSize=10;fontColor=#12355B;align=center;verticalAlign=bottom;labelBackgroundColor=#FFFFFF" edge="1" parent="1" source="E3" target="C5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_lollipop" value="" style="html=1;shape=providedRequiredInterface;strokeColor=#1A6FB5;fillColor=none;strokeWidth=1.6;direction=east" vertex="1" parent="1">
+          <mxGeometry x="1140" y="620" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_text" value="Provided (ball) + required (socket) interface - drag onto any connector" style="text;html=1;align=left;fontSize=10;fontColor=#5A6572" vertex="1" parent="1">
+          <mxGeometry x="1190" y="618" width="200" height="24" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
